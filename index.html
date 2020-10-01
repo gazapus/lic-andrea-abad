@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Andrea Abad | Psicologa Educativa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="hidden">
+  <main>
+    <header>
+      <img src="./images/logo.png" alt="" id="logo"/>
+    </header>
+    <section>
+      <h1>
+        <span>ESTOY</span><br />MUY<br />PRONTO
+      </h1>
+      <p>
+        Hola a todos! Estamos actualmente construyendo nuestra plataforma web.
+        Dejanos tu mail para mantenerte al tanto de las novedades y el lanzamiento.
+      </p>
+      <form action="#" onsubmit="sendMail(); return false">
+        <label>
+          <input type="email" placeholder="Correo electrónico" />
+          <div id="error_icon" class="error_icon error_flag hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="12" cy="12" r="12" fill="#EA3535" />
+                <path fill="#FFF" fill-rule="nonzero"
+                  d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z" />
+              </g>
+            </svg>
+          </div>
+          <button aria-label="Send email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+              <path fill="none" stroke="#090B2B" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" /></svg>
+          </button>
+        </label>
+        <span id="error_message" class="hidden error_flag">Ingrese un correo válido</span>
+        <span id="success_message" class="hidden">Gracias por suscribirse</span>
+      </form>
+    </section>
+  </main>
+  <img src="images/hero-desktop.jpg" alt="preview image" id="asideImage" />
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
